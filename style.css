@@ -652,3 +652,41 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================
+   Plannit Widget Integration
+   ========================================= */
+
+.plannit-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.plannit-iframe {
+    width: 100%;
+    height: 620px;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.plannit-powered {
+    font-size: 0.78rem;
+    color: #666;
+    text-align: center !important;
+    margin-top: 10px;
+    letter-spacing: 0.3px;
+}
+
+.plannit-powered i {
+    color: #4caf50;
+    margin-right: 5px;
+}
+
+.plannit-powered strong {
+    color: #e0a230;
+}

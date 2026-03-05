@@ -225,27 +225,13 @@
                     <p style="margin-top: 30px;"><strong>Heures d'ouverture:</strong><br>Lundi - Vendredi: 8h00 -
                         18h00<br>Samedi: 9h00 - 14h00</p>
                 </div>
-                <div class="contact-form">
-                    <form id="estimationForm">
-                        <div class="form-group">
-                            <label for="name">Nom Complet</label>
-                            <input type="text" id="name" name="name" required placeholder="Votre nom">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Courriel</label>
-                            <input type="email" id="email" name="email" required placeholder="votre@courriel.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(000) 000-0000">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Description des travaux</label>
-                            <textarea id="message" name="message"
-                                placeholder="Détails du projet (fissures, dimensions approximatives...)"></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Envoyer la demande</button>
-                    </form>
+                <div class="contact-form plannit-form-wrapper">
+                    <iframe
+                        src="https://plannit.io/merchants/experthydroplusinc?language=fr&view=merchantProfile&action=RequestQuote"
+                        class="plannit-iframe" title="Formulaire de soumission Plannit" frameborder="0"
+                        allow="fullscreen" loading="lazy"></iframe>
+                    <p class="plannit-powered"><i class="fas fa-lock"></i> Formulaire sécurisé propulsé par
+                        <strong>Plannit</strong></p>
                 </div>
             </div>
         </div>
@@ -304,13 +290,13 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('estimationForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Merci ! Votre demande a été envoyée. Nous vous contacterons bientôt.');
-            this.reset();
-        });
-    </script>
+    <!-- Plannit Widgets -->
+    <script type="application/javascript"
+        src="https://widget.plannit.io/widgets/inject/cta?business=y6r1msqhdjyg&locale=fr"></script>
+
+    <!-- Plannit Bot -->
+    <script type="application/javascript"
+        src="https://widget.plannit.io/inject?business=y6r1msqhdjyg&locale=fr"></script>
 </body>
 
 </html>
